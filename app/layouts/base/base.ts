@@ -1,9 +1,5 @@
 import {Component, ViewEncapsulation, ViewContainerRef} from '@angular/core';
-import { ROUTER_DIRECTIVES, Routes } from '@angular/router';
-
-import {LoginComponent} from '../../pages/login/components/login';
-import {SignupComponent} from '../../pages/signup/components/signup';
-import {DashboardComponent} from '../dashboard/components/dashboard';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 
 @Component({
 	moduleId: module.id,
@@ -12,13 +8,6 @@ import {DashboardComponent} from '../dashboard/components/dashboard';
     encapsulation: ViewEncapsulation.None,
     directives: [ROUTER_DIRECTIVES]
 })
-
-@Routes([
-    { path: '/', component: LoginComponent },
-    { path: '/signup', component: SignupComponent },
-    { path: 'dashboard', component: DashboardComponent }
-])
-
 export class AppComponent {
 	viewContainerRef: any = null;
 	public constructor(viewContainerRef:ViewContainerRef) {
