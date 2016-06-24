@@ -1,4 +1,13 @@
-# SB Admin rewritten in Angular2 and Bootstrap 4
+# SB Admin rewritten in Angular2 RC3 and Bootstrap 4
+
+Made this fork for studying purposes. The only changes I made were to make the project run on Angular RC3 and Route v3.
+
+TODO: make gulp build.prod work
+
+
+
+
+
 
 Simple Dashboard Admin App built using Angular 2 and Bootstrap 4
 
